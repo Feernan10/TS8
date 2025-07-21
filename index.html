@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea Semana 8</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-cup-hot"></i> Bar Amigo
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#eventos">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <section id="inicio" class="mb-5">
+    <div id="carouselBarAmigo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselBarAmigo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselBarAmigo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselBarAmigo" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Interior del bar">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ambiente Acogedor</h5>
+            <p>Disfruta de nuestras instalaciones modernas y cómodas</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Cócteles">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Nuestros Cócteles</h5>
+            <p>Preparados por nuestros expertos mixólogos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Eventos">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Eventos Especiales</h5>
+            <p>Vive noches inolvidables con nuestra programación</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBarAmigo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBarAmigo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Tabla de Productos -->
+  <section id="menu" class="container my-5">
+    <h2 class="text-center mb-4">Nuestro Menú</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Disponibilidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Amigo Special</td>
+            <td>Cóctel con vodka, jugo de arándanos y lima</td>
+            <td>$8.99</td>
+            <td><span class="badge bg-success">Disponible</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Cerveza Artesanal</td>
+            <td>Selección de cervezas locales</td>
+            <td>$5.50 - $7.50</td>
+            <td><span class="badge bg-success">Disponible</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Margarita Clásica</td>
+            <td>Tequila, triple sec y jugo de lima</td>
+            <td>$9.50</td>
+            <td><span class="badge bg-success">Disponible</span></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Vino Tinto Reserva</td>
+            <td>Selección premium de la casa</td>
+            <td>$12.00</td>
+            <td><span class="badge bg-warning text-dark">Últimas unidades</span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Tabla de Quesos</td>
+            <td>Selección de 5 quesos gourmet</td>
+            <td>$15.00</td>
+            <td><span class="badge bg-success">Disponible</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Formulario de Contacto -->
+  <section id="contacto" class="container my-5">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" required>
+            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            <div class="invalid-feedback">Por favor escribe tu mensaje.</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <button type="button" id="btnAlerta" class="btn btn-outline-secondary">Ver promoción</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Bar Amigo</h5>
+          <p>Donde los buenos momentos se comparten desde 2010.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Horario</h5>
+          <p>Lunes a Viernes: 4pm - 2am<br>
+          Sábado y Domingo: 12pm - 3am</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Contacto</h5>
+          <p><i class="bi bi-geo-alt"></i> Calle Amistad 123, Centro<br>
+          <i class="bi bi-telephone"></i> +593 987654321<br>
+          <i class="bi bi-envelope"></i> info@barnamigo.com</p>
+          <div class="social-links">
+            <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p class="mb-0">&copy; 2023 Bar Amigo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
